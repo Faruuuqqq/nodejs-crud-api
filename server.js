@@ -1,10 +1,10 @@
 const http = require("http");
-const getReq = require("./methods/get-request");
-const postReq = require("./methods/post-request");
-const putReq = require("./methods/put-request");
-const deleteReq = require("./methods/delete-request");
+const getReq = require("./routes/get-request");
+const postReq = require("./routes/post-request");
+const putReq = require("./routes/put-request");
+const deleteReq = require("./routes/delete-request");
 let movies = require("./data/movies.json");
-//require("dotenv").config();
+require("dotenv").config();
 
 const PORT = process.env.PORT || 5001;
 
